@@ -1,0 +1,45 @@
+[
+    {
+        "id": "1",
+        "cardImage": "https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "personPic": "https://images.unsplash.com/photo-1518799175676-a0fed7996acb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "authorName": "Mr. A",
+        "published-date": "Mar 14 (4 Days ago)",
+        "cardTitle": "How to learn as a self-taught programmer",
+        "hashTags": "#beginners #programming",
+        "timeToRead" :  "0min read"
+    },
+
+    {
+        "id": "2",
+        "cardImage": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "personPic": "https://images.unsplash.com/photo-1567186937675-a5131c8a89ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+        "authorName": "Mr. B",
+        "published-date": "Jan 10 (1 Days ago)",
+        "cardTitle": "How to get your first job as a self-taught programmer",
+        "hashTags": "#beginners #programming",
+        "timeToRead" : "0min read"
+    },
+
+    {
+        "id": "3",
+        "cardImage": "https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "personPic": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "authorName": "Mr. C",
+        "published-date": "Feb 20 (1 Days ago)",
+        "cardTitle": "How to get your first job as a self-taught programmer",
+        "hashTags": "#beginners #programming",
+        "timeToRead" : "0min read"
+    },
+
+    {
+        "id": "4",
+        "cardImage": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+        "personPic": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "authorName": "Mr. D",
+        "published-date": "Dec 29 (12 Days ago)",
+        "cardTitle": "How to get your first job as a self-taught programmer",
+        "hashTags": "#beginners #programming",
+        "timeToRead" : "0min read"
+    }
+]
