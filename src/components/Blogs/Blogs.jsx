@@ -1,33 +1,66 @@
-import { useEffect, useState } from 'react';
-import './Blogs.css'
-import SingleBlog from '../SingleBlog/SingleBlog';
+import { useEffect, useState } from "react";
+import "./Blogs.css";
+import SingleBlog from "../SingleBlog/SingleBlog";
+
+import Sidebar from "../Sidebar/SideBar";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blogs = () => {
-    const [blogs,setBlogs] = useState([])
-    useEffect(()=>{
-        fetch("fakeData.json")
-        .then(res=>res.json())
-        .then(data=>setBlogs(data))
-    },[])
-   
-    return (
-        <div className='main-container'>
-            <div className='blog-item'>
-            {
-            blogs.map((blog)=>(
-               <SingleBlog blog={blog}></SingleBlog>
-            ))
-           }
-            </div>
+  const [blogs, setBlogs] = useState([]);
+const [sidebar, setSidebar] = useState([])
+  const [time, setTime] = useState([0]);
+  useEffect(() => {
+    fetch("fakeData.json")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data));
+  }, []);
 
-            <div className="bookmark">
-                <h2>bookmark list come here</h2>
-            </div> 
+  const handleAddToSidebar = (blog) => {
+        
+    if(sidebar.includes(blog)){
+        toast.error("Item already bookmarked!");
+       
+    }
+    // else{
+        const newSidebar = [...sidebar, blog];
+        setSidebar(newSidebar);
+       
+    // }
+    
+};
 
 
-          
-        </div>
-    );
+  const handleMarkAsRead = (blog) => {
+    // console.log(blog);
+    const newTime = parseInt(blog.timeToRead);
+    setTime(newTime + parseInt(time));
+  };
+
+  return (
+    <div className="main-container">
+      <div className="blog-item">
+        {blogs.map((blog) => (
+          <SingleBlog
+            blog={blog}
+            handleMarkAsRead={handleMarkAsRead}
+            handleAddToSidebar={handleAddToSidebar}
+          ></SingleBlog>
+        ))}
+      </div>
+
+      {/* <div className="bookmark">
+        <h1>Spent time on read: {time} </h1>
+        <h2>Bookmarked Blogs : </h2>
+      </div> */}
+
+      <div>
+        <Sidebar sidebar={sidebar} time={time}>
+      
+        </Sidebar>
+      </div>
+    </div>
+  );
 };
 
 export default Blogs;
