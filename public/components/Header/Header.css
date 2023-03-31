@@ -1,0 +1,14 @@
+.header {
+    padding: 0 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "monaco", monospace;
+}
+.navPersonPic {
+  width: 70px;
+  height: 60px;
+  left: 1540px;
+  top: 52px;
+  border-radius: 50%;
+  padding-top: 10px;
+}
