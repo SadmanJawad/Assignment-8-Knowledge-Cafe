@@ -30,3 +30,21 @@
 .date{
     height: 26px;
 }
+.btn-markAsRead{
+    border-color: skyblue;
+    /* border-style: none; */
+}
+.minRead{
+    display: flex;
+    gap: 10px;
+}
+.minRead .icon{
+    margin-top: 17px;
+    transition: all 0.3s linear;
+}
+
+.minRead:hover .icon{
+    transform: scale(1.5);
+    color:gold;
+} 
+
