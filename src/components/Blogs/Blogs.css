@@ -1,0 +1,9 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 80px;
+}
+.blog-item{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
