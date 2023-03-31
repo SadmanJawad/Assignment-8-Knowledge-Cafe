@@ -7,7 +7,6 @@ import { ToastContainer } from "react-toastify";
 const SingleBlog = (props) => {
 
     const {cardImage,personPic,authorName,publishedDate,timeToRead,cardTitle,hashTags} = props.blog;
-
 //   console.log('blog', blog);
   const handleMarkAsRead = props.handleMarkAsRead;
   const handleAddToSidebar = props.handleAddToSidebar;
@@ -30,13 +29,16 @@ const SingleBlog = (props) => {
         {/* child 2 */}
         <div className="minRead">
           <p>{timeToRead} min read</p>
-          <FontAwesomeIcon onClick={() => handleAddToSidebar(props.blog)} className="icon" icon={faBookmark} /> <ToastContainer></ToastContainer>
-          {/* <p>{timeToRead} min reads <button onClick={() => handleAddToSidebar(props.blog) } ><FontAwesomeIcon icon={faBookmark} /> <ToastContainer></ToastContainer></button></p> */}
+          <FontAwesomeIcon 
+          onClick={() => handleAddToSidebar(props.blog)} 
+          className="icon" icon={faBookmark} /> 
+          <ToastContainer></ToastContainer>
+          
 
         </div>
       </div>
-      <h1>{cardTitle}</h1>
-      <p>{hashTags}</p>
+      <h1 className="title">{cardTitle}</h1>
+      <p className="hash">{hashTags}</p>
       {/* <button onClick={() => handleMarkAsRead(props)} className="btn-markAsRead">Mark as read</button> */}
       <button onClick={() => handleMarkAsRead(props.blog)} className="btn-markAsRead">Mark as read</button>
       

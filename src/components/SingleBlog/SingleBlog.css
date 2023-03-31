@@ -23,6 +23,7 @@
     margin-left: 24px;
 }
 .name-person{
+    font-size: x-large;
     margin-bottom: 0px;
     width: 93px;
     height: 38px;
@@ -31,14 +32,24 @@
     height: 26px;
 }
 .btn-markAsRead{
-    border-color: skyblue;
-    /* border-style: none; */
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #6047ec;
+    margin-top: 21px;
+    margin-bottom: 38px;
+    border: none;
+    cursor: pointer;
 }
 .minRead{
     display: flex;
     gap: 10px;
 }
 .minRead .icon{
+    cursor:pointer;
     margin-top: 17px;
     transition: all 0.3s linear;
 }
@@ -47,4 +58,12 @@
     transform: scale(1.5);
     color:gold;
 } 
+
+.title{
+    margin-top: 1px;
+}
+
+.hash{
+    font-size: large;
+}
 

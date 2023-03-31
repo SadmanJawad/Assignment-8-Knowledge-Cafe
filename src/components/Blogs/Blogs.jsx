@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./Blogs.css";
 import SingleBlog from "../SingleBlog/SingleBlog";
-
 import Sidebar from "../Sidebar/SideBar";
+
+// toast install
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,17 +18,12 @@ const [sidebar, setSidebar] = useState([])
   }, []);
 
   const handleAddToSidebar = (blog) => {
-        
+// react toast added
     if(sidebar.includes(blog)){
         toast.error("Item already bookmarked!");
-       
     }
-    // else{
         const newSidebar = [...sidebar, blog];
-        setSidebar(newSidebar);
-       
-    // }
-    
+        setSidebar(newSidebar);    
 };
 
 

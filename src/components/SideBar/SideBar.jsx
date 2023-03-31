@@ -7,7 +7,7 @@ const Sidebar = (props) => {
     return (
         <div className='sidebar'>
             <div className='spent-time'>
-                <h1>spent on reading: {time} min</h1>
+                <h1>Spent time on read: {time} min</h1>
             </div>
             <div className='bookmark-container'>
                 <h4>Bookmarked Blogs :{sidebar.length}</h4>
