@@ -17,7 +17,7 @@
         "authorName": "Mr. B",
         "publishedDate": "Jan 10 (1 Days ago)",
         "cardTitle": "How to get your first job as a self-taught programmer",
-        "hashTags": "#beginners #programming",
+        "hashTags": "#beginners #programming #job #it",
         "timeToRead" : 7
     },
 
@@ -27,8 +27,8 @@
         "personPic": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         "authorName": "Mr. C",
         "publishedDate": "Feb 20 (1 Days ago)",
-        "cardTitle": "How to get your first job as a self-taught programmer",
-        "hashTags": "#beginners #programming",
+        "cardTitle": "How to set your aim based on your interest",
+        "hashTags": "#aim #lifegoal",
         "timeToRead" : 3
     },
 
@@ -38,8 +38,8 @@
         "personPic": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         "authorName": "Mr. D",
         "publishedDate": "Dec 29 (12 Days ago)",
-        "cardTitle": "How to get your first job as a self-taught programmer",
-        "hashTags": "#beginners #programming",
+        "cardTitle": "How to code like a pro",
+        "hashTags": "#beginners #programming #coder #programmer",
         "timeToRead" : 9
     }
 ]

@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    justify-content: center;
+  }
+  .main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+}

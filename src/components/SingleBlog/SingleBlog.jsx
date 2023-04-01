@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 const SingleBlog = (props) => {
 
     const {cardImage,personPic,authorName,publishedDate,timeToRead,cardTitle,hashTags} = props.blog;
+
 //   console.log('blog', blog);
   const handleMarkAsRead = props.handleMarkAsRead;
   const handleAddToSidebar = props.handleAddToSidebar;

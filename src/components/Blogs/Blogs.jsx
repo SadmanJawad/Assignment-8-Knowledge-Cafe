@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 import "./Blogs.css";
 import SingleBlog from "../SingleBlog/SingleBlog";
-import Sidebar from "../Sidebar/SideBar";
-
+import Sidebar from "../SideBar/SideBar";
 // toast install
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Question from "../Question/Question";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 const [sidebar, setSidebar] = useState([])
   const [time, setTime] = useState([0]);
+  
   useEffect(() => {
     fetch("fakeData.json")
       .then((res) => res.json())
@@ -25,7 +26,6 @@ const [sidebar, setSidebar] = useState([])
         const newSidebar = [...sidebar, blog];
         setSidebar(newSidebar);    
 };
-
 
   const handleMarkAsRead = (blog) => {
     // console.log(blog);
@@ -45,17 +45,13 @@ const [sidebar, setSidebar] = useState([])
         ))}
       </div>
 
-      {/* <div className="bookmark">
-        <h1>Spent time on read: {time} </h1>
-        <h2>Bookmarked Blogs : </h2>
-      </div> */}
-
       <div>
-        <Sidebar sidebar={sidebar} time={time}>
-      
-        </Sidebar>
+        <Sidebar sidebar={sidebar} time={time}></Sidebar>
       </div>
-    </div>
+
+      <Question></Question>
+        </div>
+        
   );
 };
 
