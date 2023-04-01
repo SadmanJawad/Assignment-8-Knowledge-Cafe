@@ -21,7 +21,7 @@ const SingleBlog = (props) => {
       <div className="blog-info">
         {/* child 1 */}
         <div className="blog-profile">
-          <img src={personPic} alt="" />
+          <img src={personPic} alt="" />  
           <div className="profile-name">
             <h4 className="name-person">{authorName}</h4>
             <p className="date">{publishedDate}</p>

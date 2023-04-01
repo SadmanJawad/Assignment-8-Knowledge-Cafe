@@ -38,7 +38,7 @@ const Question = () => {
       </p>
       <h4>Q4: How does REACT works?</h4>
       <p>
-        Ans:    The user interface is developed using React in the form of isolated pieces of code called components. The accept arbitrary inputs, also known as props, and rect components function in a similar manner to the javascript function.
+        Ans:    The user interface is developed using React in the form of isolated pieces of code called components. The accept arbitrary inputs, also known as props, and react components function in a similar manner to the javascript function.
         React is a JavaScript library for building user interfaces. The basic steps to use React are: <br />
         1. Install React <br />
         2. Set up your project <br />
